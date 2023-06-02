@@ -22,7 +22,7 @@ This repository contains LibreOffice Calc file (.odt) which contains convenience
 
     Is used for "Content Changed" Sheet Event binding. 
     
-    It checks whether the event was triggered in one of the cells of the configured column and if so, sends the value of the cell to Jisho and in the nearby cell creates a dropdown with values returned from Jisho query.
+    It checks whether the event was triggered in one of the cells of the configured column and if so, sends the value of the cell to Jisho. Once the response is available, it creates a dropdown with values parsed from Jisho results.
 
     The behavior can be configured in jisho macros module by changing the values of these constants:
     * ROMAJI_COLUMN - set to the number of the column in which cells should be tracked for change and their values sent to Jisho;
@@ -41,11 +41,11 @@ This repository contains LibreOffice Calc file (.odt) which contains convenience
 
 * `RUBY(TEXT as String, ANNOTATION as String)`
 
-    Used for creating html \<ruby\> tag.
+    Used for creating html \<ruby\> tag (furigana).
 
 * `RB(TEXT as String, SEPARATOR as String)`
 
-    Used for inserting html \<ruby\> tags inside a longer text, especially if one than more ruby element is needed. It finds patterns like this: `<SEPARATOR>kanji<SEPARATOR>hiraganaOrKatakana<SEPARATOR>` and replaces them with ruby elements. E.g. TEXT could be:
+    Used for inserting html \<ruby\> tags (furigana) inside a longer text, especially if one than more ruby element is needed. It finds patterns like this: `<SEPARATOR>kanji<SEPARATOR>hiraganaOrKatakana<SEPARATOR>` and replaces them with ruby elements. E.g. TEXT could be:
     ```
      |答|こた|えが|分|わ|かる
      ```
