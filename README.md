@@ -63,7 +63,7 @@ This repository contains LibreOffice Calc file (.odt) which contains convenience
 ### Default columns & configuration
 
 #### Default constant values:
-ROMAJI_COLUMN = 4 (column D)
+ROMAJI_COLUMN = 4 (column E)
 
 JISHO_RESULT_LIMIT = 5
 
